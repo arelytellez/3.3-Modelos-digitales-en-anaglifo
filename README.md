@@ -1,124 +1,96 @@
-# 🎮 Visor 3D Anaglifo con Three.js
+# 🎮 Modelos Digitales en Anaglifo
 
-Este proyecto es un visor 3D que utiliza modelos animados (FBX) y permite visualizarlos con efecto **anaglifo (rojo/azul)** usando lentes 3D. Está desarrollado con **Three.js** y utiliza **Bootstrap 5** para la interfaz.
-
----
-
-## 🔴🔵 Características
-
-* Visualización 3D con efecto anaglifo
-* Carga de modelos FBX (exportados desde Mixamo)
-* Animaciones incluidas en el modelo
-* Entorno 3D con skybox
-* Interacción con el mouse (movimiento de cámara)
-* Interfaz con Navbar y Footer (Bootstrap 5)
+Aplicación web interactiva desarrollada con Three.js que permite la visualización de modelos 3D en modo estereoscópico utilizando la técnica de anaglifo (rojo/cian).
 
 ---
 
-## 🚀 Cómo ejecutar el proyecto
+## 👓 Descripción
 
-### 1. Clonar o descargar el repositorio
+Este proyecto implementa la visualización de modelos digitales en 3D utilizando el efecto anaglifo, el cual permite percibir profundidad al utilizar lentes especiales rojo/cian.
 
-```
-git clone <url-del-repositorio>
-```
+El usuario puede observar un entorno tridimensional con figuras (donas) y un modelo animado proveniente de Mixamo, generando una experiencia inmersiva en el navegador.
 
 ---
 
-## 🎯 Uso
+## 🚀 Tecnologías utilizadas
 
-1. Abre el proyecto en tu navegador
-2. Usa lentes **rojo/azul**
-3. Mueve el mouse para cambiar la vista
-4. Observa el efecto de profundidad en el modelo 3D
-
----
-
-## 🔧 Configuración importante
-
-### Ajustar efecto 3D
-
-En `main.js`:
-
-```
-effect.eyeSep = 0.08;
-effect.planeDistance = 1.5;
-```
-
----
-
-### Ajustar tamaño del modelo
-
-```
-model.scale.set(0.04, 0.04, 0.04);
-```
-
----
-
-### Posición del modelo (profundidad)
-
-```
-model.position.set(0, -1, -1);
-```
-
----
-
-## ⚠️ Problemas comunes
-
-### ❌ No carga el modelo
-
-* Verifica la ruta en `/assets/models/`
-* Asegúrate de usar servidor local
-
----
-
-### ❌ Se ve oscuro
-
-* Ajusta la iluminación en `main.js`
-* Agrega luces ambientales y direccionales
-
----
-
-### ❌ No se nota el 3D
-
-* Incrementa `eyeSep`
-* Ajusta `planeDistance`
-* Coloca objetos a diferentes profundidades
-
----
-
-## 👨‍💻 Autor
-
-**Juan Fernando Ortega Olvera**
-Proyecto académico de visualización 3D con Three.js
-
----
-
-## 📌 Tecnologías utilizadas
-
+* HTML5
+* CSS3
+* JavaScript
 * Three.js
-* WebGL
-* JavaScript (ES Modules)
 * Bootstrap 5
+* FBXLoader (para modelos 3D)
+* AnaglyphEffect (renderizado estereoscópico)
 
 ---
 
-## 📷 Créditos
+## 🧩 Características principales
 
-* Modelos animados: Mixamo
-* Skybox: Paul Debevec
-
----
-
-## 🚀 Futuras mejoras
-
-* Controles de cámara (OrbitControls)
-* UI para cambiar animaciones
-* Ajuste dinámico del efecto 3D
-* Soporte para modelos GLB/GLTF
+* Visualización de modelos 3D en navegador
+* Implementación de efecto anaglifo (rojo/cian)
+* Integración de modelo animado desde Mixamo
+* Escenario 3D con múltiples objetos distribuidos en el espacio
+* Interacción básica con el usuario (movimiento del modelo)
+* Diseño responsivo con Bootstrap
 
 ---
 
-## 📄 Licencia
+## 📂 Estructura del proyecto
 
-Este proyecto es de uso educativo.
+```
+/proyecto
+│
+├── index.html
+├── README.md
+│
+├── assets/
+│   ├── css/
+│   │   └── styles.css
+│   │
+│   ├── js/
+│   │   └── main.js
+│   │
+│   ├── models/
+│   │   └── modelo.fbx
+│   │
+│   ├── build/
+│   └── jsm/
+```
+
+
+## 🌐 Publicación
+
+El proyecto puede visualizarse en línea mediante GitHub Pages:
+
+```
+https://arelytellez.github.io/3.3-Modelos-digitales-en-anaglifo/
+```
+
+---
+
+## 👓 Requisitos
+
+* Navegador web moderno (Chrome, Edge, Firefox)
+* Lentes anaglifo (rojo/cian) para apreciar el efecto 3D
+
+---
+
+
+## 🧠 Aprendizajes
+
+Durante el desarrollo de este proyecto se aplicaron los siguientes conceptos:
+
+* Renderizado 3D en la web
+* Uso de Three.js para gráficos interactivos
+* Integración de modelos animados
+* Manipulación de escenas, cámaras e iluminación
+* Implementación de efectos estereoscópicos
+
+---
+
+## ✍️ Autor
+
+Arely Tellez Salas
+
+---
+
