@@ -119,3 +119,26 @@ footer {
     width: 100%;
     z-index: 10;
 }
+.anaglifo-text {
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: white;
+
+    text-shadow: 
+        -3px 0 red,
+         3px 0 cyan;
+
+    margin: 0 auto;
+}
+.hero {
+    position: fixed;
+    top: 80px; /* 👈 debajo del navbar */
+    left: 50%;
+    transform: translateX(-50%); /* 👈 centra horizontalmente */
+
+    width: 100%;
+    text-align: center;
+
+    z-index: 10;
+    pointer-events: none;
+}
